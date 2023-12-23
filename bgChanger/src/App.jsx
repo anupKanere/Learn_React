@@ -5,7 +5,7 @@ function App() {
   const [color, setColor] = useState("skyblue")
 
   return (
-    
+     
       <div className="w-full h-screen duration-700 " style={{ backgroundColor: color }}>
 
         <div className="fixed flex flex-wrap justify-center top-12 inset-x-0 px-2">
