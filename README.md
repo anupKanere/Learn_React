@@ -108,4 +108,27 @@
 
 # props :
 
-    - Props (short for properties) in React are a fundamental concept used for passing data from one component to another. They are read-only and provide a way to make components more reusable.
+    -   Props (short for properties) in React are a fundamental concept
+        used for passing data from one component to another.
+        They are read-only and provide a way to make components more reusable.
+
+# Fragment :
+
+    -   In React, a Fragment is a way to group multiple children elements without
+        adding an extra node to the DOM.
+    -   It's essentially a lightweight wrapper that doesn't create an additional DOM element when rendered.
+
+    -   Example :
+
+        import React from 'react';
+
+        const MyComponent = () => {
+            return (
+                <React.Fragment>
+                    <h1>Hello</h1>
+                    <p>Here's a paragraph.</p>
+                </React.Fragment>
+            );
+        };
+
+    -   Alternatively, you can use the shorthand syntax <> and </> to replace 
