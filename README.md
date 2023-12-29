@@ -131,4 +131,30 @@
             );
         };
 
-    -   Alternatively, you can use the shorthand syntax <> and </> to replace 
+    -   Alternatively, you can use the shorthand syntax <> and </> to replace
+
+# Context API :
+
+    - Context allows passing data through the component tree without passing props down manually at every level.
+
+    - In React application, we passed data in a top-down approach via props. 
+    Sometimes it is inconvenient for certain types of props that are required by 
+    many components in the React application. Context provides a way to pass values
+    between components without explicitly passing a prop through every level of the
+    component tree.
+
+- How to use Context :
+        There are two main steps to use the React context into the React application:
+
+        1. Setup a context provider and define the data which you want to store.
+        2. Use a context consumer whenever you need the data from the store
+
+- When to use Context :
+
+    Context is used to share data which can be considered "global" for React components tree and use that data where needed, such as the current authenticated user, theme, etc. For example, in the below code snippet, we manually thread through a "theme" prop to style the Button component.
+
+- Syntax :
+
+    const myContext = React.createContext();
+    myContext.Provider;
+    myContext.Consumer;
